@@ -14,6 +14,14 @@
             }
           },
           {
+            "id": "assets",
+            "title": "Assets",
+            "icon": "CLOCK",
+            "redirectRoute": {
+              "urlPath": "/windturbine/assets"
+            }
+          },
+          {
             "id": "turbines",
             "title": "Turbines",
             "icon": "COG",

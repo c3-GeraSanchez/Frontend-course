@@ -1,11 +1,12 @@
 {
   "type": "UiSdlLayoutNavMenu",
-  "navMenu": {
-    "id": "WindTurbine.NavMenu"
-  },
+  "navMenu":
+    {
+      "id": "WindTurbine.NavMenu"
+    },
   "children": [
     {
-      "id": "WindTurbine.TurbinesTable"
+      "id": "WindTurbine.HomeLayout"
     }
   ]
 }

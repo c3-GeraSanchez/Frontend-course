@@ -1,3 +1,4 @@
 targetModuleName,targetPageName,name,urlPath
 WindTurbine,HomePage,/,/
 WindTurbine,HomePage,/windturbine/home,/windturbine/home
+WindTurbine,Turbines,/windturbine/turbines,/windturbine/turbines
