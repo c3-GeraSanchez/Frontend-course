@@ -1,0 +1,12 @@
+{
+  "style": {
+    "theme": {
+      "id": "SDL.DefaultLight",
+      "themeCategory": "Light"
+    },
+    "density": {
+      "id": "C3DefaultClassicDensity",
+      "densityCategory": "Classic"
+    }
+  }
+}

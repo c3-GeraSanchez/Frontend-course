@@ -1,0 +1,9 @@
+{
+  "author": "C3Training",
+  "name": "windTurbineUiApp",
+  "dependencies": {
+    "uiComponentLibraryReact": "8.5"
+  },
+  "description": "Training Package",
+  "version": "8.5.0"
+}

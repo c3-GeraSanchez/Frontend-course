@@ -1,0 +1,5 @@
+@typeScript(sourceCodeType="Module")
+type UiSdlEpicUpdateChart mixes UiSdlEpic {
+    @typeScript(env='client')
+    epic: ~
+} 

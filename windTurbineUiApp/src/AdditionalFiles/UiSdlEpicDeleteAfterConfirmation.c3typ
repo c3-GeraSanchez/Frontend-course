@@ -1,0 +1,6 @@
+@typeScript(sourceCodeType="Module")
+type UiSdlEpicDeleteAfterConfirmation mixes UiSdlEpic {
+    // Override the epic method
+    @typeScript(env='client')
+    epic: ~
+}
