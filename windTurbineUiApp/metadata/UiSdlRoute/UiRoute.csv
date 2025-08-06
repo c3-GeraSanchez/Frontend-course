@@ -3,4 +3,4 @@ WindTurbine,HomePage,/,/
 WindTurbine,HomePage,/windturbine/home,/windturbine/home
 WindTurbine,Turbines,/windturbine/turbines,/windturbine/turbines
 WindTurbine,Turbine,/windturbine/turbine,/windturbine/turbine
-WindTurbine,Turbine,/windturbine/turbine/{{pageId}},/windturbine/turbine/{{pageId}}
+WindTurbine,Turbine,/windturbine/turbine/{{myId}},/windturbine/turbine/{{myId}}

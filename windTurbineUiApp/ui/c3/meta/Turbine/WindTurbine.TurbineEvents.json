@@ -15,7 +15,7 @@
       "contextVars": {
         "turbineId":{
             "type": "UiSdlPageParam",
-            "path": "pageId"
+            "path": "myId"
         }
       },
       "columnFields": [
