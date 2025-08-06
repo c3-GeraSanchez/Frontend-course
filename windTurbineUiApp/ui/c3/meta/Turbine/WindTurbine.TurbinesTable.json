@@ -17,7 +17,12 @@
             "fieldName": "id",
             "label": "WindTurbine.TurbinesTable.id",
             "sortable": true,
-            "searchable": true
+            "searchable": true,
+
+            "redirectLink": {
+              "internal": true,
+              "href": "/windturbine/turbine/{{id}}"
+            }
           },
           {
             "fieldName": "country",
