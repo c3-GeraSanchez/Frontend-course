@@ -3,6 +3,9 @@
   "component": {
     "children": [
       {
+        "id": "WindTurbine.HomePictureContainer"
+      },
+      {
         "id": "WindTurbine.EventChartsContainer"
       }
     ]

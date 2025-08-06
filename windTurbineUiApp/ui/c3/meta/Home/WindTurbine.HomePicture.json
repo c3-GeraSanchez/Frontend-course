@@ -1,0 +1,10 @@
+{
+    "type": "UiSdlConnected<UiSdlImage>",
+    "component": {
+        "horizontalAlign": "CENTER",
+        "verticalAlign": "MIDDLE",
+        "altText": "turbine",
+        "size": "LARGE",
+        "url": "assets/images/sampleturbine.jpg"
+    }
+}
