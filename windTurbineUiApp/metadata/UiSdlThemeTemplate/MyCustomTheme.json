@@ -1,0 +1,9 @@
+{
+  "type": "UiSdlThemeTemplate",
+  "id": "MyCustomTheme",
+  "themeCategory": "Dark",
+  "accentColor": "--c3-style-color-core-blue-60",               
+  "colorBgSideNav": "--c3-style-color-neutral-red-10",          
+  "componentBackgroundColor": "--c3-style-color-neutral-grey-00",
+  "pageBackgroundColor": "--c3-style-color-neutral-grey-05"
+}
