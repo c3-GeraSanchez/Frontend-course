@@ -1,24 +1,31 @@
 {
-  "type": "UiSdlConnected<UiSdlGridLayout>",
-  "component": {
-    "navMenu": {
-      "id": "WindTurbine.NavMenu"
-    },
-    "gridStyle": "FLUID",
-    "children": [
-      {
-        "type": "UiSdlGridContainer",
-        "column": 12,
+    "type": "UiSdlConnected<UiSdlGridLayout>",
+    "component": {
+        "navMenu": {
+            "id": "WindTurbine.NavMenu"
+        },
+        "gridStyle": "FLUID",
         "children": [
-          {
-            "type": "UiSdlComponentContainer",
-            "column": 12,
-            "childComponent": {
-              "id": "WindTurbine.TurbineEvents"
+            {
+                "type": "UiSdlGridContainer",
+                "column": 12,
+                "children": [
+                    {
+                        "type": "UiSdlComponentContainer",
+                        "column": 12,
+                        "childComponent": {
+                            "id": "WindTurbine.TurbineEvents"
+                        }
+                    },
+                    {
+                        "type": "UiSdlComponentContainer",
+                        "column": 12,
+                        "childComponent": {
+                            "id": "WindTurbine.TurbineDeleteEventConfirmationModal"
+                        }
+                    }
+                ]
             }
-          }
         ]
-      }
-    ]
-  }
+    }
 }

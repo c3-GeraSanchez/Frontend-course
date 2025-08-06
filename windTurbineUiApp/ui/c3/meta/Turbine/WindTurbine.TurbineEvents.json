@@ -1,49 +1,71 @@
 {
-  "type": "UiSdlConnected<UiSdlDataGrid>",
-  "component": {
-    "header": {
-      "title": "All Turbine Events"
+    "type": "UiSdlConnected<UiSdlDataGrid>",
+    "applicationStateRef": {
+        "id": "WindTurbine.UiSdlApplicationStateWT"
     },
-    "paginationConfig": {
-      "pageSize": 10,
-      "pagination": true
+    "component": {
+        "header": {
+            "title": "All Turbine Events"
+        },
+        "paginationConfig": {
+            "pageSize": 10,
+            "pagination": true
+        },
+        "reorderableColumns": false,
+        "filterBar": true,
+        "dataSpec": {
+            "dataType": "WindTurbineEvent",
+            "contextVars": {
+                "turbineId": {
+                    "type": "UiSdlPageParam",
+                    "path": "myId"
+                }
+            },
+            "columnFields": [
+                {
+                    "fieldName": "id",
+                    "label": "id",
+                    "sortable": true,
+                    "searchable": true
+                },
+                {
+                    "fieldName": "start",
+                    "label": "start",
+                    "sortable": true,
+                    "searchable": true
+                },
+                {
+                    "fieldName": "end",
+                    "label": "end",
+                    "sortable": true,
+                    "searchable": true
+                },
+                {
+                    "fieldName": "event_code",
+                    "label": "event code",
+                    "sortable": true,
+                    "searchable": true
+                }
+            ]
+        },
+        "rowActions": [
+            {
+                "type": "UiSdlDataGridRowAction",
+                "name": "Delete With Confirmation",
+                "actionSuffix": "DELETE_CUSTOM",
+                "iconSuffix": "trash"
+            }
+        ]
     },
-    "reorderableColumns": false,
-    "filterBar": true,
-    "dataSpec": {
-      "dataType": "WindTurbineEvent",
-      "contextVars": {
-        "turbineId":{
-            "type": "UiSdlPageParam",
-            "path": "myId"
+    "effectTriggers": [
+        {
+            "trigger": "WindTurbine.TurbineEvents.ROW_ACTION_CLICK_DELETE_CUSTOM",
+            "effectType": "UiSdlEpicDeleteTurbineEvent",
+            "payload": {
+                "modal": "WindTurbine.TurbineDeleteEventConfirmationModal",
+                "componentId": "WindTurbine.UiSdlApplicationStateWT"
+            },
+            "payloadStrategy": "MERGE"
         }
-      },
-      "columnFields": [
-        {
-          "fieldName": "id",
-          "label": "id",
-          "sortable": true,
-          "searchable": true
-        },
-        {
-          "fieldName": "start",
-          "label": "start",
-          "sortable": true,
-          "searchable": true
-        },
-        {
-          "fieldName": "end",
-          "label": "end",
-          "sortable": true,
-          "searchable": true
-        },
-        {
-          "fieldName": "event_code",
-          "label": "event code",
-          "sortable": true,
-          "searchable": true
-        }
-      ]
-    }
-  }
+    ]
 }

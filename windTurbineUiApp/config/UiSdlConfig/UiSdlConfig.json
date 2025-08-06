@@ -1,8 +1,8 @@
 {
   "style": {
     "theme": {
-      "id": "SDL.DefaultLight",
-      "themeCategory": "Light"
+      "id": "C3DefaultDark",
+      "themeCategory": "Dark"
     },
     "density": {
       "id": "C3DefaultClassicDensity",
