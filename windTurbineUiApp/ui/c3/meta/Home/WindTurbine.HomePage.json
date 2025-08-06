@@ -6,7 +6,7 @@
     },
   "children": [
     {
-      "id": "WindTurbine.HomeLayout"
+      "id": "WindTurbine.HomeGridLayout"
     }
   ]
 }

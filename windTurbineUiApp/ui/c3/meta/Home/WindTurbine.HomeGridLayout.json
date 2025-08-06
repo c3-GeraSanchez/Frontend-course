@@ -1,0 +1,49 @@
+{
+    "type": "UiSdlConnected<UiSdlGridLayout>",
+    "component": {
+        "gridStyle": "FLUID",
+        "fixedSize": "MEDIUM",
+        "gutter": 8,
+        "display": "VERTICAL",
+        "children": [
+            {
+                "type": "UiSdlGridContainer",
+                "column": 12,
+                "display": "HORIZONTAL",
+                "gutter": 8,
+                "children": [
+                    {
+                        "type": "UiSdlComponentContainer",
+                        "column": 6,
+                        "childComponent": {
+                            "id": "WindTurbine.HomePictureContainer"
+                        }
+                    },
+                    {
+                        "type": "UiSdlComponentContainer",
+                        "column": 6,
+                        "childComponent": {
+                            "id": "WindTurbine.EventChartsContainer"
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "UiSdlGridContainer",
+                "column": 12,
+                "display": "HORIZONTAL",
+                "gutter": 8,
+                "children": [
+                    {
+                        "type": "UiSdlComponentContainer",
+                        "column": 6
+                    },
+                    {
+                        "type": "UiSdlComponentContainer",
+                        "column": 6
+                    }
+                ]
+            }
+        ]
+    }
+}
