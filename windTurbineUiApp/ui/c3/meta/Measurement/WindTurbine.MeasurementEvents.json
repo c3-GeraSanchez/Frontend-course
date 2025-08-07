@@ -59,11 +59,10 @@
     },
     "effectTriggers": [
         {
-            "trigger": "WindTurbine.TurbineEvents.ROW_ACTION_CLICK_DELETE_CUSTOM",
-            "effectType": "UiSdlEpicDeleteTurbineEvent",
+            "trigger": "WindTurbine.MeasurementEvents.ROW_CLICK",
+            "effectType": "UiSdlEpicUpdateChart",
             "payload": {
-                "modal": "WindTurbine.TurbineDeleteEventConfirmationModal",
-                "componentId": "WindTurbine.UiSdlApplicationStateWT"
+                "chart": "WindTurbine.MeasurementChart"
             },
             "payloadStrategy": "MERGE"
         }

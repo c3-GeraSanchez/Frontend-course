@@ -23,6 +23,13 @@
                         "childComponent": {
                             "id": "WindTurbine.TurbineDeleteEventConfirmationModal"
                         }
+                    },
+                    {
+                        "type": "UiSdlComponentContainer",
+                        "column": 12,
+                        "childComponent": {
+                            "id": "WindTurbine.MeasurementChart"
+                        }
                     }
                 ]
             }

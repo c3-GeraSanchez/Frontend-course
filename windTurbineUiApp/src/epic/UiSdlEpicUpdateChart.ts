@@ -12,12 +12,13 @@ export function epic(actionStream, _stateStream) {
       const payload = action.payload;
 
       // this line sets the datetime picker to a week before the Measurement timestamp (this is NOT the start date which applies to Events.)
-      startDate = new DateTime(payload.dataItem.obj.timestamp).plusDays().toString();
+      startDate = new DateTime(payload.dataItem.obj.timestamp).plusDays(-7).toString();
+      endDate = new DateTime(payload.dataItem.obj.timestamp).plusDays(365).toString();
       
         //use concat and of if triggering multiple actions. you should set month to day to complete the capstone.
         return concat(
-            of(updateDisplayDateAction(payload.chart,startDate,endDate, 'MONTH')),
-            of(updateDataFilterAction(payload.chart,startDate,endDate, 'MONTH')));
+            of(updateDisplayDateAction(payload.chart,startDate,endDate, 'DAY')),
+            of(updateDataFilterAction(payload.chart,startDate,endDate, 'DAY')));
       })
   );
 }		
