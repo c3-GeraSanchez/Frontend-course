@@ -47,15 +47,7 @@
                     "searchable": true
                 }
             ]
-        },
-        "rowActions": [
-            {
-                "type": "UiSdlDataGridRowAction",
-                "name": "Delete With Confirmation",
-                "actionSuffix": "DELETE_CUSTOM",
-                "iconSuffix": "trash"
-            }
-        ]
+        }
     },
     "effectTriggers": [
         {

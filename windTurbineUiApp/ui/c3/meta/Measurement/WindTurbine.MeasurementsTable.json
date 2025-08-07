@@ -39,6 +39,28 @@
                     "searchable": true
                 }
             ]
+        },
+        "rowActions": [
+            {
+                "type": "UiSdlDataGridRowAction",
+                "name": "View Average Speed",
+                "actionSuffix": "POPUP",
+                "iconSuffix": "grid-layout"
+            }
+        ]
+    },
+    "effectTriggers": [
+        {
+            "trigger": "WindTurbine.MeasurementsTable.ROW_ACTION_CLICK_POPUP",
+            "effectType": "UiSdlEpicShowUiSdlModal",
+            "payload": {
+                "modal": "WindTurbine.MeasurementsModal",
+                "applicationStateForPayload": {
+                    "id": "WindTurbine.UiSdlApplicationStateWT",
+                    "trigger": "WindTurbine.UiSdlApplicationStateWT.ROW_RECORD_STORE"
+                }
+            },
+            "payloadStrategy": "MERGE"
         }
-    }
+    ]
 }

@@ -1,0 +1,62 @@
+
+          <html>
+            <head>
+            </head>
+            <body>
+              <script>
+                (function () {
+                  const cookie = document.cookie
+                    .split(';')
+                    .map((c) => c.trim())
+                    .find((c) => c.startsWith('c3AppUrlPrefix='));
+                  const c3AppUrlPrefix = cookie ? cookie.split('=')[1] : null;
+
+                  const favicon = document.createElement('link');
+                  favicon.rel = 'icon';
+                  favicon.type = 'type="image/png"';
+                  favicon.href = '/c3/favicon.png';
+
+                  const baseElement = document.createElement('base');
+                  baseElement.href = "/";
+
+                  if (c3AppUrlPrefix) {
+                    baseElement.href = encodeURI(location.origin + '/' + c3AppUrlPrefix + '/');
+                    favicon.href = encodeURI('/' + c3AppUrlPrefix + '/c3/favicon.png');
+                  }
+
+                  document.head.appendChild(baseElement);
+                  document.head.appendChild(favicon);
+
+                  const headTags = [{"tagName":"script","voidTag":false,"meta":{"plugin":"html-webpack-plugin"},"attributes":{"defer":true,"src":"/c3/main.f942dd212f60429b79e3.js"}},{"tagName":"link","attributes":{"rel":"preload","href":"/c3/c3ui_core/remoteEntry.js","as":"script"}}];
+                  const bodyTags = [];
+                  const createElement = function (tagMetadata) {
+                    const tag = document.createElement(tagMetadata.tagName);
+
+                    if (tagMetadata.voidTag === false && tagMetadata.innerHTML) {
+                      tag.innerHTML = tagMetadata.innerHTML;
+                    }
+
+                    Object.keys(tagMetadata.attributes || {})
+                      .filter(function (attributeName) {
+                        return tagMetadata.attributes[attributeName] === '' || tagMetadata.attributes[attributeName];
+                      })
+                      .forEach(function (attributeName) {
+                        let attributeValue = tagMetadata.attributes[attributeName];
+
+                        // Prepend application URL to all remote resource elements.
+                        if (c3AppUrlPrefix && (tagMetadata.tagName === 'script' && attributeName === 'src' || tagMetadata.tagName === 'img' && attributeName === 'src' || tagMetadata.tagName === 'link' && attributeName === 'href')) {
+                          attributeValue = encodeURI(location.origin + '/' + c3AppUrlPrefix) + attributeValue;
+                        }
+                        tag[attributeName] = attributeValue;
+                      });
+
+                    return tag;
+                  };
+
+                  headTags.map(createElement).forEach((element) => document.head.appendChild(element));
+                  bodyTags.map(createElement).forEach((element) => document.body.appendChild(element));
+                }());
+              </script>
+            </body>
+          </html>
+        
