@@ -16,7 +16,7 @@
           {
             "id": "measurements",
             "title": "Measurements",
-            "icon": "COG",
+            "icon": "CHART_BAR",
             "redirectRoute": {
               "urlPath": "/windturbine/measurements"
             }
