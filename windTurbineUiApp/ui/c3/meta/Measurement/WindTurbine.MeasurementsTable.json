@@ -51,7 +51,7 @@
     },
     "effectTriggers": [
         {
-            "trigger": "WindTurbine.TurbinesTable.ROW_ACTION_CLICK_POPUP",
+            "trigger": "WindTurbine.MeasurementsTable.ROW_ACTION_CLICK_POPUP",
             "effectType": "UiSdlEpicShowUiSdlModal",
             "payload": {
                 "modal": "WindTurbine.MeasurementsModal",
