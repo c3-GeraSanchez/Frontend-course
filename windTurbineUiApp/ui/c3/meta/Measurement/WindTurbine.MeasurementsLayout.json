@@ -1,0 +1,10 @@
+{
+  "type": "UiSdlConnected<UiSdlLayoutBase>",
+  "component": {
+    "children": [
+      {
+        "id": "WindTurbine.MeasurementsTable"
+      }
+    ]
+  }
+}

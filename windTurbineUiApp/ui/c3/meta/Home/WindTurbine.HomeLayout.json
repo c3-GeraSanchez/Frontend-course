@@ -3,7 +3,7 @@
   "component": {
     "children": [
       {
-        "id": "WindTurbine.HomePictureContainer"
+        "id": "WindTurbine.TurbinesTable"
       },
       {
         "id": "WindTurbine.EventChartsContainer"

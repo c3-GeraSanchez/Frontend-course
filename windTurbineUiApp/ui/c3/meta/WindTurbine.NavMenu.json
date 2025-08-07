@@ -14,11 +14,11 @@
             }
           },
           {
-            "id": "assets",
-            "title": "Assets",
-            "icon": "CLOCK",
+            "id": "measurements",
+            "title": "Measurements",
+            "icon": "COG",
             "redirectRoute": {
-              "urlPath": "/windturbine/assets"
+              "urlPath": "/windturbine/measurements"
             }
           },
           {

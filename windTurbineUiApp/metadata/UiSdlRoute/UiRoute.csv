@@ -4,3 +4,6 @@ WindTurbine,HomePage,/windturbine/home,/windturbine/home
 WindTurbine,Turbines,/windturbine/turbines,/windturbine/turbines
 WindTurbine,Turbine,/windturbine/turbine,/windturbine/turbine
 WindTurbine,Turbine,/windturbine/turbine/{{myId}},/windturbine/turbine/{{myId}}
+WindTurbine,Measurements,/windturbine/measurements,/windturbine/measurements
+WindTurbine,Measurement,/windturbine/measurement,/windturbine/measurement
+WindTurbine,Measurement,/windturbine/measurement/{{id}},/windturbine/measurement/{{id}}
