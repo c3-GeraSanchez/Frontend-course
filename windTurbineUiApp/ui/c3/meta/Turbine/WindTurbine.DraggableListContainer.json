@@ -1,0 +1,25 @@
+{
+  "type": "UiSdlConnected<UiSdlGridLayout>",
+  "component": {
+    "display": "HORIZONTAL",
+    "gridStyle": "FLUID",
+    "fixedSize": "MEDIUM",
+    "pagePadding": 0,
+    "children": [
+      {
+        "type": "UiSdlGridContainer",
+        "column": 12,
+        "background": "AUTO",
+        "display": "VERTICAL",
+        "children": [
+          {
+            "padding": 16,
+            "childComponent": {
+              "id": "WindTurbine.DraggableList"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

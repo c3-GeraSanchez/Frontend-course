@@ -14,7 +14,7 @@
                         "type": "UiSdlComponentContainer",
                         "column": 12,
                         "childComponent": {
-                            "id": "WindTurbine.TurbinesTable"
+                            "id": "WindTurbine.TurbinesTabPanel"
                         }
                     },
                     {

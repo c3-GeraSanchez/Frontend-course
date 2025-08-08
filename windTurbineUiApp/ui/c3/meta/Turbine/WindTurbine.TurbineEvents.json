@@ -43,8 +43,9 @@
                 {
                     "fieldName": "event_code",
                     "label": "event code",
-                    "sortable": true,
-                    "searchable": true
+                    "customCellComponent": {
+                        "id": "WindTurbine.CellActionRenderer"
+                    }
                 }
             ]
         },

@@ -1,0 +1,17 @@
+{
+  "type": "UiSdlConnected<UiSdlTabPanel>",
+  "component": {
+    "id": "WindTurbine.TurbinesTabPanel",
+    "activeTab": "WindTurbine.TurbinesTable",
+    "tabComponents": [
+      {
+        "id": "WindTurbine.TurbinesTable",
+        "title": "Turbines"
+      },
+      {
+        "id": "WindTurbine.DraggableListContainer",
+        "title": "Sortable List"
+      }
+    ]
+  }
+}
